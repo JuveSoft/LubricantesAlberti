@@ -1,0 +1,30 @@
+@include tablet {
+    .icono-nosotros {
+        @include grid(3, 2rem);
+       // background-color: rgb(184, 184, 61);
+        margin-bottom: 2rem;
+    }
+}
+
+.icono {
+    max-height: 40rem;    
+    //background-color: rgb(107, 107, 58);
+
+    img {
+        height: 10rem;
+        width: auto;
+        margin: auto;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        //font-size: 2rem;
+    }
+
+    p {
+      //  background-color: brown;
+        padding: 0 2rem;
+        font-size: 1.8rem;
+        text-align: justify;
+    }
+}

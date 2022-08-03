@@ -1,0 +1,51 @@
+.barra {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin: 0 auto;    
+    img {
+        max-width: 20rem;
+        margin: auto;      
+        background-color: rgba($color: #fff, $alpha: .2);
+        border-radius: 50%;        
+        animation: mymove 5s infinite;
+        }
+         @keyframes mymove {
+            50% {
+                background-color:rgba($color: rgb(247, 235, 15), $alpha: .2);
+                }
+        }
+        .titulo-principal {           
+            color: rgb(92, 92, 45);
+            letter-spacing: .5rem;          
+            h2{
+                font-size: 4rem;
+            }
+        }
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .titulo-principal {
+            display: flex;
+            align-items: center;
+            color: rgb(92, 92, 24);
+        }
+    }
+}
+
+.navegacion {
+    @include tablet {
+        display: flex;
+    }
+    a {
+        display: block;
+        color: $negro;
+        font-size: 1.6rem;
+        margin: 0.5rem;
+        @include tablet {
+            margin: 1rem;
+        }
+    }
+}

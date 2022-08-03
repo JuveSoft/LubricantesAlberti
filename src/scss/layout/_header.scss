@@ -1,0 +1,41 @@
+.no-webp .inicio {
+    background-image: url(../img/Lubricantes/aceiteTransparente.png);
+}
+
+.webp .inicio {
+    background-image: url(../img/Lubricantes/aceiteTransparente.webp);
+}
+
+.header {
+    background-color: rgb(30, 255, 0);
+    padding: 1rem 0 2rem 0;
+    &.inicio {
+        background-position: center center;
+        background-size: cover;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        @include tablet {
+            min-height: 60rem;
+            //height: auto;            
+        }       
+        .contenedor-header{
+            @include tablet{
+                min-height: 70rem;
+            }
+        }
+    }
+}
+.contenedor-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    h3 {
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        font-size: 2rem;
+        margin-left: 2rem;
+        max-width: 40rem;
+    }    
+}
