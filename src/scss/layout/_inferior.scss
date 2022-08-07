@@ -1,0 +1,52 @@
+.seccion-inferior{
+    margin-top: 8rem;
+}
+@include tablet {
+    .seccion-inferior {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+}
+
+.entrada-blog {
+    margin-bottom: 3rem;
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.texto-entrada {
+    padding: 0 3rem 0 1rem;
+    a {
+        margin-top: 2rem;
+    }
+    h4 {
+        margin: 0;
+        line-height: 2.2;
+        text-align: left;
+        &::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $verde;
+            margin-right: 2rem;
+        }
+    }
+    p {
+        text-align: left;
+    }
+    span {
+        color: $verde;
+    }
+}

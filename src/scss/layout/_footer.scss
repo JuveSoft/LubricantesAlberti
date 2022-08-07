@@ -1,8 +1,9 @@
 .footer{
     padding: calc($separacion / 2);
-    background-color: rgb(32, 19, 126);
+    background-color: rgb(40, 39, 51);
     color: white;
-    
+    margin-bottom: 0;
+        
     .contenedor-footer{
         padding-top: calc($separacion / 2);
     }
@@ -13,5 +14,8 @@
     }
     a{
         color: $blanco;
+        &:hover{
+            color: rgb(218, 243, 77);
+        }
     }
 }
