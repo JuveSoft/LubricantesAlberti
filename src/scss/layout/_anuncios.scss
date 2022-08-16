@@ -1,3 +1,10 @@
+.titulo-oferta {
+    font-size: 5rem;
+    color: red;
+    text-transform: uppercase;
+    border-bottom: 1rem solid red;
+}
+
 .seccion-anuncios {
     margin-top: 2rem;
     @include tablet {
@@ -7,75 +14,89 @@
         @include grid(3, 2rem);
     }
 }
+
 @include tablet {
     contenedor-anuncio {
-        
         @include grid(3, 2rem);
     }
 }
-.anuncio {    
-   .foto-producto {
-      height: 100%;      
-       max-width: 100%;
-        padding: 1rem 0;
-        img{
-            margin-left: auto;
-                margin-right: auto;
-                max-height: 30rem;
+
+.anuncio {
+    .foto-producto {
+        width: fit-content;
+        //padding: 1rem 0;
+        margin: auto;
+        img {
+            max-height: 30rem;
+            //margin-left: auto;
+            //margin-right: auto;
+            padding: 2rem;
+            //text-align: center;
         }
     }
+
     //display: block;
     //max-width: 90%;
     background-color: lighten($gris, 5);
     border: 2px solid $gris;
-
     .contenido-anuncio {
         padding: 0 1rem;
         margin: auto;
     }
+
     h3,
     p {
         margin: auto;
     }
-    h4{
-        color: rgb(62, 12, 241);        
+
+    h4 {
+        color: rgb(62, 12, 241);
         margin: 0;
     }
-    .precio {        
-        display: flex;
-        justify-content: center;
-        color: $azul;
-        font-weight: 900;
-        font-size: 4rem;
-        letter-spacing: .2rem;
-        margin: 2rem 0;
-    }
-    &:hover{
+.precio {
+    display: flex;
+    justify-content: center;
+    color: $azul;
+    font-weight: 900;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    margin: 2rem ;
+}
+
+    &:hover {
         box-shadow: 0rem 0rem 15rem 1rem rgb(213, 211, 218);
         transition: .5s;
     }
 }
+
 
 .icono-caracteristicas {
     display: block;
     list-style: none;
     padding: 0;
     margin: auto;
+
     @include tablet {
         // @include grid(3,2rem);
     }
+
     li {
         @include grid(2, 2rem);
         //display: flex;        
         padding: 1rem 2rem 1rem 0;
+
         img {
-            margin: auto;
+            display: block;
+            //margin: auto;
+            margin-left: auto;
+            margin-right: auto;
             max-height: 5rem;
-            padding: 0;
+
         }
+
         p {
             font-size: 1.6rem;
-            margin-left:0;
+            margin-left: 0;
         }
-    }   
+    }
 }

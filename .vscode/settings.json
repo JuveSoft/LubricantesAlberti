@@ -1,0 +1,7 @@
+{
+    "audioCues.noInlayHints": "off",
+    "audioCues.lineHasBreakpoint": "off",
+    "audioCues.lineHasError": "off",
+    "audioCues.lineHasInlineSuggestion": "off",
+    "audioCues.onDebugBreak": "off"
+}

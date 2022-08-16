@@ -3,6 +3,7 @@
 @import 'base/mixins';
 @import 'base/utilidades';
 @import 'base/normalize';
+@import 'base/darkMode';
 
 // IU
 @import 'layout/header';
@@ -18,3 +19,4 @@
 // Internas
 @import 'internas/contenido';
 @import 'internas/nosotros';
+@import 'internas/formularios';

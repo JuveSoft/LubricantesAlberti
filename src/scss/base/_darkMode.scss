@@ -1,0 +1,16 @@
+.darkMode{
+    background-color: darken($grisOscuro,10);
+    p{
+        color: $blanco;
+     }
+     a,h1,h2,h3,h4{
+        color: $grisLetra;
+     }
+     .anuncio{
+        background-color: $grisOscuro;
+        h4,p{
+            color: $blanco;
+        }
+     }
+
+}

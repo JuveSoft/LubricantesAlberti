@@ -1,43 +1,79 @@
+
+
 .barra {
     display: flex;
     flex-direction: column;
-    width:100%;
-    margin: 0 auto;    
+    align-items: center; 
+    width: 100%;
+    margin: 0 auto;
+
     img {
         max-width: 20rem;
-        margin: auto;      
+        margin: auto;
         background-color: rgba($color: #fff, $alpha: .2);
-        border-radius: 50%;        
+        border-radius: 15px;        
         animation: mymove 5s infinite;
-        }
-         @keyframes mymove {
-            50% {
-                background-color:rgba($color: rgb(247, 235, 15), $alpha: .2);
-                }
-        }
-        .titulo-principal {           
-            color: rgb(92, 92, 45);
-            letter-spacing: .5rem;          
-            h2{
-                font-size: 4rem;
-            }
-        }
+    }
 
+    @keyframes mymove {
+        50% {
+            background-color: rgba($color: rgb(247, 235, 15), $alpha: .2);
+        }
+    }
+    .titulo-principal {
+        color: rgb(92, 92, 45);
+        letter-spacing: .3rem;
+        h2 {
+            font-size: 4rem;
+        }
+    }
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         .titulo-principal {
             display: flex;
             align-items: center;
             color: rgb(92, 92, 24);
         }
     }
+        .derecha {
+            display: flex;
+            flex-direction: column;
+            //align-items: center;
+            margin-bottom: 2rem;
+    
+            @include tablet {
+                //align-items: flex-end;
+                margin-top: 0rem;
+            }
+    
+            .dark-mode-boton {
+                width: 3rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                              
+                filter: invert(100%);
+                &:hover{
+                    cursor: pointer;
+                }
+    
+                @include tablet {
+                   // margin-top: 0rem;
+                margin-right: 0;
+                }
+            }
+        }
 }
-
 .navegacion {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+    //display: none;
     @include tablet {
         display: flex;
+        opacity: 1;
+        visibility: visible;
     }
     a {
         display: block;
@@ -48,4 +84,23 @@
             margin: 1rem;
         }
     }
+}
+/** Menú hamburguesa**/
+.mobile-menu {
+    cursor: pointer;
+    @include tablet {
+        display: none;
+    }
+    img {
+        width: 5rem;
+    }
+}
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+    // display: flex;
+    // flex-direction: column;
+    // @include tablet{
+    //     flex-direction: row;
+    // }  // Con esto solucionamos que se vea en columna cuando es mas grande que tablet
 }
