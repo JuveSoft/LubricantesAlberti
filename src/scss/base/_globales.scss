@@ -24,10 +24,13 @@ p {
 .contenedor {
     width: 95%;
     max-width: 120rem;
+    height: auto;
     margin: 0 auto;
     padding: 0;
 }
-
+.seccion{
+    max-width: 80rem ;
+}
 a {
     text-decoration: none;
 }
@@ -63,4 +66,7 @@ h3 {
 
 h4 {
     font-size: 2.6rem;
+}
+label{
+    margin-left: 2rem;
 }

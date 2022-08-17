@@ -1,16 +1,49 @@
 .darkMode{
+   .header{
+      background-color: rgb(1, 68, 1);
+   }
+   .navegacion{ 
+      a{
+         color: $grisLetra;
+         &:hover{
+            color: Yellow;
+
+         }
+      }
+   }
+   .anuncio{
+      .precio, h4{
+         color: $grisLetra;
+      }
+      
+   }
     background-color: darken($grisOscuro,10);
-    p{
+    .titulo-principal{
+      h2{
+         color: $grisLetra;
+      }
+    }
+    p,h4{
         color: $blanco;
      }
-     a,h1,h2,h3,h4{
+     h1,h2,h3{
         color: $grisLetra;
      }
      .anuncio{
         background-color: $grisOscuro;
-        h4,p{
-            color: $blanco;
-        }
+      //   h4,p{
+      //       color: $blanco;
+      //   }
      }
-
+     label{
+      color: $blanco;
+     }
+      fieldset{
+         legend, p{
+            color: $grisLetra;
+         }         
+     }
+         .texto-nosotros blockquote{
+          color: $grisLetra;
+         }
 }

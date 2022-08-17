@@ -1,8 +1,8 @@
 @include tablet {
     .icono-nosotros {
-        @include grid(3, 2rem);
+        @include grid(3, 1.5rem);
        // background-color: rgb(184, 184, 61);
-        margin-bottom: 2rem;
+        
     }
 }
 // .linea{
@@ -13,9 +13,9 @@
 .icono {
     max-height: 40rem;    
     //background-color: rgb(107, 107, 58);
-
+    margin-bottom: 4rem;
     img {
-        height: 10rem;
+        max-height: 5rem;
         width: auto;
         margin: auto;
     }

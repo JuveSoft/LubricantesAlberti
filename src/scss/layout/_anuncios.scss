@@ -7,9 +7,11 @@
 
 .seccion-anuncios {
     margin-top: 2rem;
+
     @include tablet {
         @include grid(2, 2rem);
     }
+
     @include desktop {
         @include grid(3, 2rem);
     }
@@ -24,24 +26,26 @@
 .anuncio {
     .foto-producto {
         width: fit-content;
-        //padding: 1rem 0;
+       // padding: 1rem 0;
         margin: auto;
+
         img {
-            max-height: 30rem;
-            //margin-left: auto;
-            //margin-right: auto;
+            display: flex;
+            max-height: 25rem;
+            margin: auto;
             padding: 2rem;
-            //text-align: center;
+            text-align: center;
         }
     }
 
-    //display: block;
+    display: block;
     //max-width: 90%;
     background-color: lighten($gris, 5);
     border: 2px solid $gris;
+
     .contenido-anuncio {
         padding: 0 1rem;
-        margin: auto;
+        // margin: auto;
     }
 
     h3,
@@ -53,15 +57,17 @@
         color: rgb(62, 12, 241);
         margin: 0;
     }
-.precio {
-    display: flex;
-    justify-content: center;
-    color: $azul;
-    font-weight: 900;
-    font-size: 4rem;
-    letter-spacing: .2rem;
-    margin: 2rem ;
-}
+
+    .precio {
+        display: flex;
+        justify-content: center;
+        color: $azul;
+        font-weight: 900;
+        font-size: 4rem;
+        //letter-spacing: .1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 
     &:hover {
         box-shadow: 0rem 0rem 15rem 1rem rgb(213, 211, 218);
