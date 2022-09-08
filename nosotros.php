@@ -1,41 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+require 'include/funciones.php';
+incluirTemplates('header');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Lubricantes Alberti</title>
+?>
 
-</head>
-
-<body>
-    <header class="header">
-        <div class="contenedor contenedor-header">
-            <div class="barra">
-                <div class="titulo-principal">
-                    <div class="/">
-                        <img src="build/img/Iconos/logoAlberti.svg" alt="logoSVG">
-                    </div>
-                    <h2>Lubricantes Alberti</h2>
-                </div>
-                <div class="mobile-menu">
-                    <img src="build/img/Iconos/barras.svg" alt="barras.svg">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/Iconos/dark-mode.svg" alt="dark-mode">
-                    <nav class="navegacion mostrar">
-                        <a href="index.html">Inicio</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-                <!--.barra-->
-            </div>
-    </header>
 
     <main class="contenedor seccion">
         <h1>Conoce sobre nosotros</h1>
@@ -83,20 +51,7 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos reservados 2022 &copy;</p>
-    </footer>
+<?php 
+incluirTemplates('footer');
+?>
 
-    <script src="build/js/bundle.min.js"></script>
-
-</body>
-
-</html>

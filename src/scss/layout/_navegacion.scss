@@ -8,20 +8,20 @@
     img {
         max-width: 20rem;
         margin: auto;
-        background-color: rgba($color: #fff, $alpha: .2);
-        border-radius: 15px;
+        //background-color: rgba($color: #fff, $alpha: .2);        
         animation: mymove 5s infinite;
     }
 
     @keyframes mymove {
         50% {
-            background-color: rgba($color: rgb(247, 235, 15), $alpha: .2);
+            border-radius: 15px;
+            //background-color: rgba($color: rgb(247, 235, 15), $alpha: .2);
         }
     }
 
     .titulo-principal {
         color: rgb(92, 92, 45);
-        letter-spacing: .3rem;
+        letter-spacing: .2rem;
 
         h2 {
             font-size: 4rem;
@@ -55,7 +55,6 @@
             width: 3rem;
             margin-top: 3rem;
             margin-bottom: 3rem;
-
             filter: invert(100%);
 
             &:hover {
@@ -101,10 +100,12 @@
 
     @include tablet {
         display: none;
+
     }
 
     img {
-        width: 5rem;
+        width: 4rem;
+        
     }
 }
 

@@ -21,10 +21,10 @@
                 </div>       
                 </div>
                 <nav class="navegacion">
-                    <a href="index.html">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>                    
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="index.php">Inicio</a>
+                    <a href="nosotros.php">Nosotros</a>                    
+                    <a href="blog.php">Blog</a>
+                    <a href="contacto.php">Contacto</a>
                 </nav>
             </div><!--.barra-->
         </div>
@@ -33,24 +33,36 @@
 <main class="contenedor seccion">
     <h1>Hoja base</h1>
 </main>
-
-
+<!-- Algunas fechas -->
+        <?php 
+                $fecha=date('d'); 
+                $fechaM=date('d-m');
+                $fechaA=date('d-m-y');
+                $fechaAnio=date('d-m-Y');
+                $fechaAnioSolo=date('Y');
+                echo $fecha;
+                echo "<br>";
+                echo $fechaM;
+                echo "<br>";
+                echo $fechaA;
+                echo "<br>";
+                echo $fechaAnio;
+                echo "<br>";
+                echo $fechaAnioSolo;
+                ?>
 
 
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
+                <a href="nosotros.php">Nosotros</a>
+                <a href="anuncios.php">Anuncios</a>
                 <a href="blog">Blog</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="contacto.php">Contacto</a>
             </nav>
         </div>
         <p class="copyright">Todos los derechos reservados 2022 &copy;</p>
     </footer>
-
-
-
 
     <script src="build/js/bundle.min.js"></script>
 

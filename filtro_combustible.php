@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -146,4 +146,4 @@ Si quieres evitar costosas reparaciones, la mejor manera de hacerlo es reemplaza
 ¡No te preocupes! En nuestro catálogo puedes encontrar los filtros de combustible perfectos para tu auto.</p>
 
 </body>
-</html>
+</php>

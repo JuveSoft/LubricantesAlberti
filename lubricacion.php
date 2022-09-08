@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,4 +84,4 @@
         objeto se empuja por ejemplo y luego se lo deja libre, esta fuerza, también llamada de rozamiento, será responsable
         de que su rapidez disminuya o incluso de que se frene.</p>
 </body>
-</html>
+</php>

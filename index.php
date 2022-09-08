@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require 'Include/funciones.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
-    <title>Lubricantes Alberti</title>
-</head>
+incluirTemplates('header', $inicio=true);
 
-<body>
-    <header class="header inicio">
-        <div class="contenedor contenedor-header">
-            <div class="barra">
-                <div class="titulo-principal">
-                    <div class="/">
-                        <img src="build/img/Iconos/logoAlberti.svg" alt="autito-logoSVG">
-                    </div>
-                    <h2>Lubricantes Alberti prueba</h2>
-                </div>
-                <div class="mobile-menu">
-                    <img src="build/img/Iconos/barras.svg" alt="barras.svg">
-                </div>
+?>
 
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/Iconos/dark-mode.svg" alt="dark-mode">
-                    <nav class="navegacion mostrar">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-            <!--.barra-->
-            <h3>Venta de Lubricantes - Filtros - Aditivos - Lámparas - Accesorios</h3>
-        </div>
-    </header>
-
+<html>
     <main class="contenedor seccion">
         <h1>Mas sobre nosotros</h1>
         <div class="icono-nosotros">
@@ -89,7 +57,7 @@
                                 <p>Menos consumo combustible</p>
                             </li>
                         </ul>
-                        <a href="anuncios.html" class="boton boton-amarillo">Ficha técnica</a>
+                        <a href="anuncios.php" class="boton boton-amarillo">Ficha técnica</a>
                     </div>
                 </div>
                 <!--anuncios-->
@@ -121,7 +89,7 @@
                                 <p>Menos consumo combustible</p>
                             </li>
                         </ul>
-                        <a href="anuncios.html" class="boton boton-amarillo">Ficha técnica</a>
+                        <a href="anuncios.php" class="boton boton-amarillo">Ficha técnica</a>
                     </div>
                 </div>
                 <!--anuncios-->
@@ -153,7 +121,7 @@
                                 <p>Menos consumo combustible</p>
                             </li>
                         </ul>
-                        <a href="anuncios.html" class="boton boton-amarillo">Ficha técnica</a>
+                        <a href="anuncios.php" class="boton boton-amarillo">Ficha técnica</a>
                     </div>
                 </div>
                 <!--anuncios-->
@@ -163,14 +131,14 @@
         <!--seccion-anuncios-->
 
         <div class="alinear-derecha">
-            <a href="anuncios.html" class="boton-verde">Ver todos los anuncios</a>
+            <a href="anuncios.php" class="boton-verde">Ver todos los anuncios</a>
 
         </div>
     </section>
     <section class="imagen-contacto">
         <h2>Encuentra el lubricante adecuado a tu vehículo</h2>
         <p>Para cualquier inquietud no dude en ponerse en contacto y consultar todo lo necesario</p>
-        <a href="contacto.html" class="boton-amarillo">Contáctanos</a>
+        <a href="contacto.php" class="boton-amarillo">Contáctanos</a>
     </section>
 
     <div class="contenedor seccion seccion-inferior">
@@ -185,7 +153,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Mantenimiento de tu vehiculo</h4>
                         <p>Escrito el: <span>04/09/2022</span> por: <span>Admin</span></p>
                         <p>Consejos para el mantenimiento del vehículo</p>
@@ -202,7 +170,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Consejos para el manejo diario</h4>
                         <p>Escrito el: <span>04/09/2022</span> por: <span>Admin</span></p>
                         <p>Rutinas posibles para el cuidado del motor</p>
@@ -222,19 +190,6 @@
         </section>
     </div>
 
-    <footer class="footer">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los derechos reservados 2022 &copy;</p>
-    </footer>
 
-    <script src="build/js/bundle.min.js"></script>
-</body>
+<?php incluirTemplates('footer');?>
 
-</html>

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE php>
+<php lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -82,4 +82,4 @@
     para eliminar partículas o productos químicos del agua. Están elaborados de diferentes componentes. Tienen una
     durabilidad de hasta un año, dependiendo del uso que se dé, o industria o negocio industri</p>
 </body>
-</html>
+</php>
