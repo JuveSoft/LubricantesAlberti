@@ -1,0 +1,57 @@
+.alerta{
+    padding: .5rem;
+    text-align: center;
+    color: $blanco;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    &.error {
+    background-color: $rojo;
+    }
+    &.exito{
+        background-color: $verde;
+    }
+}
+table.propiedades{
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+thead {
+        background-color: $verde;
+        th{
+            color: $blanco;
+            padding: 2rem;
+        }
+    }
+   .imagen-tabla{
+    margin-top: 1rem;
+    width: 6rem;
+    height: auto;
+   }
+
+}
+.AltBajMod{    
+    color: $blanco;
+    font-size: 6rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 15rem;
+    width: 60rem;
+    .altas{
+        background-color: $verde;
+    }
+    .bajas{
+        background-color: $rojo;
+    }
+    .modificaciones{
+        background-color: $amarillo;
+    }
+    a{
+        align-items: center;
+    }
+}

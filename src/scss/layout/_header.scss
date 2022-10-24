@@ -15,12 +15,12 @@
         background-size: 80%;
         background-repeat: no-repeat;
         @include tablet {
-            min-height: 60rem;
+            min-height: 40rem;
             //height: auto;            
         }       
         .contenedor-header{
             @include tablet{
-                min-height: 70rem;
+                min-height: 50rem;
             }
         }
     }

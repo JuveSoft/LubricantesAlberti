@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="/LUBRIALBERTI_CONPHP/build/css/app.css">
+
     <title>Lubricantes Alberti</title>
 </head>
 
@@ -15,16 +16,16 @@
             <div class="barra">
                 <div class="titulo-principal">
                     <div class="/">
-                        <img src="build/img/Iconos/logoAlberti.svg" alt="logoSVG">
+                        <img src="/LUBRIALBERTI_CONPHP/build/img/Iconos/logoAlberti.svg" alt="logoSVG">
                     </div>
                     <h2>Lubricantes Alberti</h2>
                 </div>
                 <div class="mobile-menu">
-                    <img src="build/img/Iconos/Hamburguesa.svg" alt="barras.svg">
+                    <img src="/LUBRIALBERTI_CONPHP/build/img/Iconos/Hamburguesa.svg" alt="barras.svg">
                 </div>
 
                 <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/Iconos/dark-mode.svg" alt="dark-mode">
+                    <img class="dark-mode-boton" src="/LUBRIALBERTI_CONPHP/build/img/Iconos/dark-mode-boton.svg" alt="dark-mode">
                     <nav class="navegacion mostrar">
                         <a href="index.php">Inicio</a>
                         <a href="nosotros.php">Nosotros</a>

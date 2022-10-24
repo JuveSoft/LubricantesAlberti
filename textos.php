@@ -81,3 +81,45 @@
     node-modules como una constante, estas la ponemos al inicio de la hoja </p>
 <p>const sass= require("sass"), no chocan el hecho que usamos repetimos los nombres porque este sirve solo para
     importar. En 'const sass' solo creamos la funcion es solo el nombre para que la llamamos desde el pipe().</p>
+
+
+
+    //$numero="1hola1";
+    //$numero2="1HOLA";
+    
+    
+    // sanitizar: filter_var es una funcion que va a filtrar una variable y toma 2 parametros el primero es una variable y
+    el segundo el tipo de filtro
+    // filter_var($variable, FILTER_SANITIZE_NUMBER_INT); solo mantiene los números
+    // filter_var($variable, FILTER_ZANITIZE_EMAIL); eLIMINAN LO QUE NO ES NECESARIO
+    
+    //$resultado=filter_var($numero,FILTER_SANITIZE_NUMBER_INT);
+    //$resultado=filter_var($numero,FILTER_SANITIZE_STRING); // mantiene lo que es el FILTER_SANITIZE_STRING
+    
+    // Si queremos validar usamos FILTER_VALIDATE_INT
+    // Se usa para que no lleguen datos sucios a la base de datos
+    //$resultado=filter_var($numero2,FILTER_VALIDATE_INT); // Donde no haya un numero va a dar false y se puede poner en un
+    if()
+    
+    // Usamos mysqli_real_escape_string(), esto sirve par aque nos hagan inyección de sql.
+    // Es una funcióin donde su primer parametro es la base de datos y el segundo loa que vamos a validar
+    // SIntaxis: $variable=mysli_real_escape_string($db, $_POST['nombre']);
+    
+    //echo "
+    <pre>";
+     //var_dump($resultado);
+     //   echo "</pre>";
+
+
+        // _SERVER : Nos va a traer información detallada de lo que hay en el archivo
+        // _POST : Nos va a traer cuando mandamos una petición en nuestro formulario
+        
+        // _FILES : nos va a permitir ver el contenido de los archivos
+        // En el array de la imagenes vamos a encontrar ' [tmp_name']=> ' es un lugar temporal donde se almacenan los archivos,
+        para saber en que parte del servidor se almacenan, para que los podemos guardar en la base de datos
+        // También tenemos el nombre del archivo
+        // Tambipen tenemos el ' [type] ' para que sepamos que tipo de archivo es
+        // Tenemos un '[error]' en el caso que lo haya
+        // Tenemos también el tamaño en bytes
+        // Con estass validaciones podemos hacer por ej que no suban imagenes muy grandes
+        //exit;

@@ -1,5 +1,5 @@
 <?php 
-require 'include/funciones.php';
+require 'Include/funciones.php';
 incluirTemplates('header');
 
 ?>
@@ -54,4 +54,3 @@ incluirTemplates('header');
 <?php 
 incluirTemplates('footer');
 ?>
-
